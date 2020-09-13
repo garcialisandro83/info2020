@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<title>GALERIA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="C:\Users\Lisandro\PAGINA CHACOFERIA\estilo1.css">
+<link rel="stylesheet" href="C:\Users\Lisandro\PAGINA CHACOFERIA\estilo2.css">
+<link rel="stylesheet" href="C:\Users\Lisandro\PAGINA CHACOFERIA\fontawesome-free-5.14.0-web\css\all.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+body {background-color:hsl(120,60%,80%);}
+</style>
+</head>
+<body>
+
+<!-- menu hamburguesa -->
+
+<div class="icon-bar" size: 500px>
+  <div class="w3-container">
+      <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">    
+          <a href="#" class="w3-bar-item w3-button w3-padding-16">Home</a>
+          <a href="C:\Users\Lisandro\Desktop\pag\New Text Document.html" class="w3-bar-item w3-button w3-padding-16">Gallery</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-16">Log-in</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-16">Register</a>
+          <a href="#" class="facebook"><i class="fab fa-facebook" style="font-size:50px"></i></a> 
+          <a href="#" class="twitter"><i class="fab fa-twitter" style="font-size:50px"></i></a> 
+          <a href="#" class="youtube"><i class="fab fa-youtube" style="font-size:50px"></i></a> 
+        <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">&times;</button>
+
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+<!-- barra de navegacion -->
+
+</body>
+
+<style>
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+<body>
+
+<div class="navbar">
+  <a class="active" href="#">INICIO</a> 
+  <a href="#">TIENDAS</a> 
+  <a href="#">VENDER</a> 
+  <a href="#">AYUDA</a>
+</div>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+  
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="w3-panel w3-green">
+  <div class="w3-container w3-center">
+  <h2>GALERIA DE IMAGENES</h2>
+  <hr>
+  <h2 class="w3-opacity">FERIA DE ARTESANOS PCIA. DE LA PLAZA</h2>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="EscabecheCabra.jpg" alt="Escabeche" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="miel.jpg" alt="Miel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="canasto.jpg" alt="Canasto" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="compota.jpg" alt="Compota" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="prepizza.jpg" alt="Compota" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="torta.jpg" alt="Compota" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="feria - 005.jpg" alt="Compota" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="feria - 006.jpg" alt="Compota" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="feria - 007.jpg" alt="Compota" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="feria - 008.jpg" alt="Compota" style="width:100%" onclick="myFunction(this);">
+  </div>
+
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h3>CHACO FERIA 2020</h3>
+  <p>COPYRIGHT - LISANDRO GARCIA (INFORMATORIO 2020)</p>
+  </div>
+ </footer>

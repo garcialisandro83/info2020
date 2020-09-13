@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<title>CHACO_FERIA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="C:\Users\Lisandro\PAGINA CHACOFERIA\estilo1.css">
+<link rel="stylesheet" href="C:\Users\Lisandro\PAGINA CHACOFERIA\estilo2.css">
+<link rel="stylesheet" href="C:\Users\Lisandro\PAGINA CHACOFERIA\fontawesome-free-5.14.0-web\css\all.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+body {background-color:hsl(120,60%,80%);}
+</style>
+</head>
+<body>
+
+<!-- menu hamburguesa -->
+
+<div class="icon-bar" size: 500px>
+  <div class="w3-container">
+      <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">    
+          <a href="#" class="w3-bar-item w3-button w3-padding-16">Home</a>
+          <a href="C:\Users\Lisandro\PAGINA CHACOFERIA\GALERIA.html" class="w3-bar-item w3-button w3-padding-16">Gallery</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-16">Log-in</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-16">Register</a>
+          <a href="#" class="facebook"><i class="fab fa-facebook" style="font-size:50px"></i></a> 
+          <a href="#" class="twitter"><i class="fab fa-twitter" style="font-size:50px"></i></a> 
+          <a href="#" class="youtube"><i class="fab fa-youtube" style="font-size:50px"></i></a> 
+        <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">&times;</button>
+
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+<!-- banner chaco feria -->
+
+<div class="header">
+  <div class="w3-display-container w3-text-white">
+    <img src="bannerchacoferia.jpg" alt="Lights" style="width:100%">
+  </div>
+
+</div>
+
+<!-- barra de navegacion -->
+
+</body>
+
+<style>
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+<body>
+
+<div class="navbar">
+  <a class="active" href="#">INICIO</a> 
+  <a href="#">TIENDAS</a> 
+  <a href="#">VENDER</a> 
+  <a href="#">AYUDA</a>
+</div>
+
+<div class="header">
+
+<div class="mySlides fade">
+  <img src="2535629.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="24757.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="15487.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 10 seconds
+}
+</script>
+
+<hr>
+
+<div class="w3-center">
+  <h2>MEJORES OFERTAS</h2>
+</div>   
+
+<hr>
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="feria - 001.jpg" alt="Sandwich" style="width:100%">
+      <h3>Just some random text</h3>
+      <p>lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="feria - 002.jpg" alt="Steak" style="width:100%">
+      <h3>Just some random text</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="feria - 003.jpg" alt="Cherries" style="width:100%">
+      <h3>Just some random text</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>What else?</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="feria - 004.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Just some random text</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
+
+<hr>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h3>CHACO FERIA 2020</h3>
+  <p>COPYRIGHT - LISANDRO GARCIA (INFORMATORIO 2020)</p>
+  </div>
+ </footer>
